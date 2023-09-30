@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.4",
+    "react-cloudinary-upload-widget": "^2.0.0",
+    "react-router-dom": "^6.14.1"
+  },
+  "scripts": {
+    "start": "node backend/server.mjs",
+    "client": "npm run dev --prefix frontend",
+    "go": "concurrently \"npm start\" \"npm run client\""
+  }
+}
